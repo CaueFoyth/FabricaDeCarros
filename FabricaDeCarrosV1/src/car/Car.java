@@ -1,5 +1,23 @@
 package car;
 public class Car {
-    public String model;
-    public String color;
+    private String model;
+    private String color;
+
+    public String getModel() {
+        return this.model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }
+
+
