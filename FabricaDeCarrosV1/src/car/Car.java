@@ -1,5 +1,5 @@
 package car;
-public class Car {
+public class Car implements Contract {
     private String model;
     private String color;
 
