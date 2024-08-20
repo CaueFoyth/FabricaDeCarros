@@ -1,22 +1,19 @@
 package car;
-public class Car implements Contract {
-    private String model;
-    private String color;
-
+public class Car extends CarroBase {
     public String getModel() {
-        return this.model;
+        return this.modelo;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setModel(String modelo) {
+        this.modelo = modelo;
     }
 
     public String getColor() {
-        return this.color;
+        return this.cor;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setColor(String cor) {
+        this.cor = cor;
     }
 }
 

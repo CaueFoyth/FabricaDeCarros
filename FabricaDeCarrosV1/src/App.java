@@ -1,12 +1,20 @@
 import car.*;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        Car carro1 = new Car();
+    public static void main(String[] args) {
+        Car Fusca = new Car();
 
-        carro1.setModel(EntradaSaida.SolicitarModelo());
-        carro1.setColor(EntradaSaida.SolicitarCor());
+        Fusca.setModel(EntradaSaida.SolicitarModelo());
+        Fusca.setColor(EntradaSaida.SolicitarCor());
 
-        System.out.println("Modelo: "+carro1.getModel()+" | Cor: "+carro1.getColor());
+        System.out.println("Modelo: "+Fusca.getModel()+" | Cor: "+Fusca.getColor());
+
+        CarroEsportivo FuscaEsportivo = new CarroEsportivo();
+        FuscaEsportivo.setModel(EntradaSaida.SolicitarModelo());
+        FuscaEsportivo.setColor(EntradaSaida.SolicitarCor());
+        FuscaEsportivo.setMotorEsportivo(EntradaSaida.SolicitarMotorEsportivo());
+        FuscaEsportivo.setVelocidadeMaxima(EntradaSaida.SolicitarVelocidadeMaxima());
+
+        System.out.println("Modelo: "+FuscaEsportivo.getModel()+" | Cor: "+FuscaEsportivo.getColor()+" | Motor: "+FuscaEsportivo.getMotorEsportivo()+" | Velocidade Máxima: "+FuscaEsportivo.getVelocidadeMaxima());
     }
 }
