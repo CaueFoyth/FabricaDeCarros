@@ -1,10 +1,14 @@
-package car;
+package view;
 
 import javax.swing.JOptionPane;
 
 
 public class EntradaSaida {
     public static String SolicitarModelo(){
+        return JOptionPane.showInputDialog(null, "Informe o modelo: ", "Modelo do carro", JOptionPane.QUESTION_MESSAGE);
+    }
+
+    public static String SolicitarModeloEsportivo(){
         return JOptionPane.showInputDialog(null, "Informe o modelo esportivo: ", "Modelo do carro", JOptionPane.QUESTION_MESSAGE);
     }
 

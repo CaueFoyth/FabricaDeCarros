@@ -1,4 +1,4 @@
-package car;
+package model;
 
 public class CarroEsportivo extends CarroBase {
     private String motorEsportivo;

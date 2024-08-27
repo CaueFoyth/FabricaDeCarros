@@ -1,4 +1,4 @@
-package car;
+package model;
 
 public abstract class CarroBase implements Contract {
     protected String modelo;

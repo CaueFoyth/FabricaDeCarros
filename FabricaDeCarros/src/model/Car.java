@@ -1,4 +1,4 @@
-package car;
+package model;
 public class Car extends CarroBase {
     public String getModel() {
         return this.modelo;

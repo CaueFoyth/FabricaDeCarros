@@ -1,4 +1,7 @@
-import car.*;
+package controller;
+import model.Car;
+import model.CarroEsportivo;
+import view.EntradaSaida;
 
 public class App {
     public static void main(String[] args) {
@@ -10,7 +13,7 @@ public class App {
         System.out.println("Modelo: "+Fusca.getModel()+" | Cor: "+Fusca.getColor());
 
         CarroEsportivo FuscaEsportivo = new CarroEsportivo();
-        FuscaEsportivo.setModel(EntradaSaida.SolicitarModelo());
+        FuscaEsportivo.setModel(EntradaSaida.SolicitarModeloEsportivo());
         FuscaEsportivo.setColor(EntradaSaida.SolicitarCor());
         FuscaEsportivo.setMotorEsportivo(EntradaSaida.SolicitarMotorEsportivo());
         FuscaEsportivo.setVelocidadeMaxima(EntradaSaida.SolicitarVelocidadeMaxima());
