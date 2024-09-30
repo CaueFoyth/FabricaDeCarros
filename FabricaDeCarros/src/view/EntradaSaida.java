@@ -1,15 +1,21 @@
 package view;
 
 import javax.swing.JOptionPane;
-
+import javax.swing.JComboBox;
 
 public class EntradaSaida {
-    public static String SolicitarModelo(){
-        return JOptionPane.showInputDialog(null, "Informe o modelo: ", "Modelo do carro", JOptionPane.QUESTION_MESSAGE);
+
+    public static int SolicitarOpcao(String[] opcoesSelecionadas) {
+        String[] opcoes = opcoesSelecionadas;
+        JComboBox<String> menu = new JComboBox<>(opcoes);
+
+        JOptionPane.showConfirmDialog(null, menu, "Seleciona a opção desejada", JOptionPane.OK_CANCEL_OPTION);
+
+        return menu.getSelectedIndex();
     }
 
-    public static String SolicitarModeloEsportivo(){
-        return JOptionPane.showInputDialog(null, "Informe o modelo esportivo: ", "Modelo do carro", JOptionPane.QUESTION_MESSAGE);
+    public static String SolicitarModelo(){
+        return JOptionPane.showInputDialog(null, "Informe o modelo: ", "Modelo do carro", JOptionPane.QUESTION_MESSAGE);
     }
 
     public static String SolicitarCor(){
